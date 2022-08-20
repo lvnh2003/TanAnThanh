@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow-x:hidden;
+}
+.container .new h1{
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #2a2a2a;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    margin-top: 0;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+   
+    padding: 50px 20px;
+}
+.container .new{
+    max-width: 959px;
+}
+.container .new .title {
+    padding: 20px 0;
+    color:rgb(255, 94, 21)
+}
+.container .new .title img{
+  vertical-align: bottom;
+}
+
+.container .new .main-content{
+    padding: 20px 0;
+    font-size: medium;
+    line-height: 30px;
+}
+.line-height{
+    line-height: 25px;
+    padding: 35px 0;
+}
+.container .new .image img{
+    max-width: 100%; 
+    
+}
+.container .new .image{
+    margin-left: 50%;
+    transform: translateX(-50%);
+   
+}
+.flickity-slider {
+    padding-top: 20px;
+    display: block;
+  
+    position: relative !important;
+    padding-bottom: 50px;
+  
+
+}
+.title-big{
+    padding: 10px 15px;
+    background-color: rgb(255, 94, 21);
+    color: white;
+    display: inline;
+    font-size: large;
+    
+}
+.slide{
+  
+   margin-top: 50px;
+  
+   
+}
+/* .slide-item{
+    width: 30%; 
+    padding-top: 10px;
+    height: 200px;
+    margin-right: 10px;
+   
+    border-radius: 5px;
+   
+} */
+.slide-item{
+    width: 270px;
+    height: 380px;
+    margin: 20px 33px;
+    border: 1px solid rgb(174, 170, 170);
+    /* text-align: center; */
+    /* align-items: center; */
+    background-color: rgb(240, 240, 240);
+    padding-bottom: 20px;
+    
+
+}
+.slide-item img{
+    width: 100%;
+    height: 183px;
+    cursor: pointer;
+    
+}
+.slide-item .title{
+    padding: 20px 10px 10px 20px; 
+    color: rgb(255, 94, 21);
+    
+   
+}
+ .slide-item .paragraph{
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 15px;
+   
+    padding: 10px 20px;
+}
+ .slide-item .paragraph:hover{
+    color: rgb(255, 94, 21);
+}
+ .slide-item .paragraph a{
+    text-decoration: none;
+    color: rgb(74, 73, 73);
+}
+.slide-item hr{
+    width: 90%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    color: green;
+}
+.image{
+    padding-top: 35px;
+}
+@media only screen and (max-width: 600px){
+    .care{
+        padding: 20px 0 !important;
+    }
+}
+@media only screen and (max-width: 300px){
+
+    
+    .title-big{
+        font-size: medium !important;
+    }
+     
+ }
+ .care {
+    padding: 0 30px;
+ }

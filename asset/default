@@ -1,0 +1,482 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(8, 22, 59);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+
+
+}
+
+.header-contact {
+    display: flex;
+
+
+}
+
+header .information {
+    font-size: small;
+}
+
+.header-contact .information:nth-child(1) {
+    position: relative;
+    padding-right: 10px;
+
+}
+
+.header-contact .information:nth-child(2) {
+
+    padding-left: 10px;
+}
+
+.header-contact .information:nth-child(1)::after {
+    content: '';
+    background-color: white;
+    height: 18px;
+    width: 1px;
+    display: block;
+    position: absolute;
+    right: 0vw;
+    top: 0;
+
+}
+
+.time-work {
+    display: flex;
+}
+
+.time-work .information:nth-child(1) {
+    position: relative;
+    padding-right: 10px;
+}
+
+.time-work .information:nth-child(1)::after {
+    content: '/';
+    padding-left: 5px;
+
+}
+.back_top .icon{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	bottom: 40px;
+	right: 20px;
+	background-color: rgb(8,22,59);
+    border:  1px solid rgb(8,22,59);
+	color: white;
+	z-index: 100000;
+    cursor: pointer;
+}
+.back_top .icon:hover{
+    background-color: white;
+    color: rgb(8,22,59);
+}
+.menu-bar nav {
+    
+    padding-left: +30px;
+  
+    height: 80px;
+    
+    background-color: white;
+    z-index: 5;
+}
+nav ul{
+    float: right;
+    margin-right: 30px;
+    z-index: 4;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 10px;
+}
+nav ul li a{
+    color: rgb(8,22,59);
+    text-decoration: none  ;
+    font-size: small;
+    font-weight: 700;
+    padding: 0 5px;
+    position: relative;
+}
+nav ul li:hover{
+    color: rgb(8,22,59);
+}
+label img{
+    width: 300px;
+    
+}
+#active::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    display: block;
+    background-color: black;
+    position: absolute;
+   left: 0;
+    bottom: -10px;
+    box-shadow: 5px 5px 2px black;
+}
+#check{
+    display: none;
+}
+.hidden{
+    display: none ;  
+    
+    /* margin-top: 20px; */
+   
+    color: rgb(255,94,21);
+     line-height: 80px;
+     margin-right: 40px;
+    float: right;
+    cursor: pointer;
+    font-size: 30px;
+}
+.slide-show {
+    background-image: url('../image/tintuc.jpg');
+    width: 100%;
+    display: block;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.rectangle {
+    width: 300px;
+    background-color: rgb(255, 94, 21, 0.8);
+
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+    
+    
+}
+.rectangle  .text{
+    color: #fff;
+    font-size: 23px;
+    line-height: 30px;
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+   
+   
+    background-image: url('/asset/image/Zaraa-700x367.png');
+}
+
+footer .title {
+    color: white;
+    text-align: center;
+}
+
+footer .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+
+footer .content .content-footer:first-child {
+    margin-top: -50px;
+}
+
+footer .content .content-footer img {
+    width: 300px;
+}
+
+footer .content .content-footer ul li{
+    border-bottom: 1px solid grey;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: white;
+    list-style: none;
+    position: relative;
+}
+footer .content .content-footer ul li::before{
+    content: '›';
+    font-weight: bold;
+    color: green;
+    display: block;
+    position: absolute;
+    left: -20px;
+    font-family: "fl-icons";
+    
+}
+
+footer .content .content-footer:last-child {
+    display: flex;
+}
+
+footer .content .content-footer .circle {
+
+    width: 40px;
+    height: 30px;
+    padding-top: 10px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+footer .overlay{
+    padding-top: 50px;
+    
+    background-color: rgb(8,22,59,0.6);
+}
+.footer-2nd{
+    width: 100%;
+    background-color: rgb(211, 211, 211);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+    font-size: smaller;
+}
+
+.footer-2nd div img{
+    width: 100px;
+    
+    
+}
+.footer-2nd div span{
+    margin-top: -30px;
+}
+.over-logo{
+    margin-top: 40px;
+     width: 100%;
+     background-color: rgb(8,22,59,0.85);
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     padding-top: 10px;
+ }
+ .over-logo .logo img{
+     width: 200px;
+ }
+ .title-no-before {
+    font-size: 35px;
+    color: white;
+
+    font-weight: bold;
+
+    padding-top: 10px;
+}
+.center {
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px){
+    header{
+        display: none ;
+    }
+    label img{
+        padding-left: 20px;
+    }
+    .hidden{
+        display: block;
+    }
+    ul#bars{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        color: rgb(8,22,59);
+        text-decoration: none;
+    }
+    #check:checked ~ ul#bars{
+        left: 0;
+    }
+    .advise .item-advise img {
+        margin-top: 20px;
+        width: 100vw;
+    }
+    /* .menu-item{
+        display: none;
+    } */
+    .about .information{
+        width: auto;
+    }
+   
+    .about .information{
+        padding-left: 20px;
+    }
+    .about .image{
+        width: 100%;
+        /* margin-left: 50%; */
+        /* transform: translateX(-50%); */
+    }
+   
+    .over-logo .logo img{
+        width: 100px;
+    }
+    .preview-company .content img{
+        margin-left: -10px;
+    }
+    .item-advise:last-child{
+        padding-top :20px;
+    }
+  
+}
+@media only screen and (max-width: 600px){
+    header{
+        display: none ;
+    }
+    label img{
+        padding-left: 20px;
+    }
+    .hidden{
+        display: block;
+    }
+    ul#bars{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        color: rgb(8,22,59);
+        text-decoration: none;
+    }
+    #check:checked ~ ul#bars{
+        left: 0;
+    }
+    .advise .item-advise img {
+        margin-top: 20px;
+        width: 100vw;
+    }
+    /* .menu-item{
+        display: none;
+    } */
+    .about .information{
+        width: auto;
+    }
+    .rectangle{
+        width: 250px;
+    }
+    .about .information{
+        padding-left: 20px;
+    }
+    .about .image{
+        width: 100%;
+        /* margin-left: 50%; */
+        /* transform: translateX(-50%); */
+    }
+   
+    .over-logo .logo img{
+        width: 100px;
+    }
+    .preview-company .content img{
+        margin-left: -10px;
+    }
+    .item-advise:last-child{
+        padding-top :20px;
+    }
+  
+}
+@media only screen and (max-width: 1300px){
+    .about .image{
+       width: 100%;
+        /* margin-left: 50%; */
+        /* transform: translateX(-50%); */
+    }
+    .about .information{
+        width: 100%;
+    }
+    .item-advise:last-child{
+        padding-top :20px;
+    }
+    ul#bars{
+        position: fixed;
+        width: 100%;
+        height: 100vh;   
+        background-color: white;
+      
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    } .hidden{
+        display: block;
+    }
+    #check:checked ~ ul#bars{
+        left: 0;
+    }
+   
+}
+
+
+@media only screen and (max-width: 450px){
+
+   label img{
+    width: 250px;
+    margin-top: 10px;
+   }
+    
+}
+@media only screen and (max-width: 370px){
+
+    label img{
+     width: 200px;
+     margin-top: 12px;
+     padding-left: 0;
+    }
+     
+ }
+ @media only screen and (max-width: 300px){
+
+    label img{
+     width: 180px;
+     margin-top: 15px;
+     
+    }
+     
+ }
+@media only screen and (max-width: 400px){
+    .rectangle{
+        width:220px;
+        margin-left: -20px;
+        height: 300px;
+        
+    }
+   
+  
+    
+    *{
+        padding-top: 2px;
+    }
+   
+    
+    .preview-company .content img{
+        width: 280px;
+    }
+}
