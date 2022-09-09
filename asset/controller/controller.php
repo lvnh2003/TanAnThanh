@@ -61,7 +61,7 @@ $errors = array();
              mysqli_query($con,$sql);
         }
 
-        die($sql);
+        
 
        
        
@@ -79,6 +79,6 @@ $errors = array();
 
     if(isset($_POST['search'])){
         $value_search=mysqli_real_escape_string($con,$_POST['value-search']);
-        header("location:new.php?value-search=$value_search");
+        header("location:/tananthanh/view/new.php?value-search=$value_search");
     }
     ?>

@@ -112,7 +112,7 @@ $result = mysqli_query($con, "SELECT * FROM NEW WHERE TITLE  LIKE '%$value_searc
         <div class="item"><a href="">Văn hóa doanh nghiệp</a></div>
         <div class="item"><a href="">Thư Viên</a></div>
     </div>
-    <div class="search" style="padding: 40px;position: relative;">
+    <div class="search">
         <form class="searchbox" method="POST" enctype="multipart/form-data">
             <input type="text" placeholder="Tìm kiếm tin tức.." name="value-search">
             <button type="submit" name="search">Tìm</button>

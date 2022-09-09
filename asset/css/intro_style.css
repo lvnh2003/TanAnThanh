@@ -116,41 +116,48 @@ label img {
 
 }
 
-#active::after {
+#active::after{
     content: '';
     width: 100%;
-    height: 1px;
+    height: 0.5px;
     display: block;
-    background-color: black;
+    background-color: orange;
     position: absolute;
     left: 0;
     bottom: -10px;
-    box-shadow: 5px 5px 2px black;
+    
 }
 
 
-
-.slide-show {
-    background-image: url('../image/Zaraa-700x367.png');
+.slide-show{
+    max-width: 100%;
+    background-image: url('../image/gioithieu.jpg');
     width: 100%;
-    display: block;
-    height: 500px;
+    
+    height: 350px;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
-
 .rectangle {
-    width: 400px;
+    width: 300px;
     background-color: rgb(255, 94, 21, 0.8);
 
-    height: 250px;
+    height: 80px;
     position: absolute;
-    top: 30%;
-    left: 20%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
     border-radius: 2px;
-    box-shadow: 5px 5px 3px rgb(71, 70, 70);
-    padding-left: 2vw;
+    
+    
+}
+.rectangle  .text{
+    color: #fff;
+    font-size: 23px;
+    line-height: 30px;
+    text-align: center;
+    
 }
 
 .title-no-before {
@@ -520,7 +527,16 @@ footer .overlay {
     .item-advise:last-child {
         padding-top: 20px;
     }
-
+    .content_vision{
+        width: 330px;
+        height: 330px;
+    }
+    .content_vision_main{
+        padding: 10px 30px;
+    }
+    .review{
+        margin-top: -10px;
+    }
 }
 
 @media only screen and (max-width: 1300px) {
@@ -705,52 +721,68 @@ footer .overlay {
 }
 
 .line-break {
-    margin-top: 20px;
+    
     margin: 0 auto;
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
+
 }
 
 .line-break .line-silver {
-    height: 2px;
-    background-color: #bcbcbc;
+    width: 90px;
+    position: absolute;
+    background-color: grey;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+
+    height: 3px;
+    border-radius: 6px;
 }
 
 .line-break .line-orange {
-    height: 6px;
-    width: 48px;
-    border-radius: 25px;
-    background-color: #ff6816;
+    border-radius: 6px;
+    width: 30px;
     position: absolute;
-    top: -2px;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
+    background-color: rgb(255, 94, 21);
+    bottom: -30px;
+    bottom: -30px;
+    left: 50%;
+
+    display: block;
+
+    height: 8px;
+    transform: translate(-50%, +30%)
+
+    
+
 }
 
 .content-about-hungthinh h1 {
     text-align: center;
-    color: rgb(255, 94, 21);
-    font-size: 30px;
+    
+    font-size: 24px;
+    font-weight: bold;
 
 }
 
 .content-about-hungthinh {
-    background-color: antiquewhite;
+   
 }
 
 .content-about-hungthinh {
     text-align: justify;
-    padding-left: 30px;
-    padding-right: 40px;
-    padding-bottom: 10px;
+    padding: 50px;
 }
 
 .content-about-hungthinh p span {
     color: rgb(255, 94, 21);
     font-weight: bold;
 }
-
+.content-about-hungthinh p span:first-child{
+    margin-left: 30px;
+}
 .content-about-hungthinh {
     margin-top: 10px;
 }
@@ -758,6 +790,7 @@ footer .overlay {
 .content-about-hungthinh .p2,
 .content-about-hungthinh .p3 {
     margin-top: 10px;
+    text-indent: 30px;
 }
 
 /* __________________________________________________________________________________________________________________________________ */
@@ -765,8 +798,8 @@ footer .overlay {
 .ecosystem h1 {
     margin-top: 70px;
     text-align: center;
-    color: rgb(255, 94, 21);
-    font-size: 30px;
+    font-weight: bold;
+    font-size: 24px;
 }
 
 .about {
@@ -785,10 +818,11 @@ footer .overlay {
 
 /* ------------vision--------- */
 .vision h1 {
-    margin-top: 70px;
+    
     text-align: center;
-    color: rgb(255, 94, 21);
-    font-size: 30px;
+    font-weight: bold;
+    font-size: 24px;
+    color: rgb(8,22,59);
 
 }
 
@@ -808,6 +842,7 @@ footer .overlay {
     letter-spacing: 2px;
     transition: 1s box-shadow;
     cursor: pointer;
+    padding: 15px;
 }
 
 .content_vision:hover {
@@ -832,7 +867,9 @@ footer .overlay {
     background: #F3CE5E;
     animation: 2s counterclockwise infinite;
 }
-
+.content_vision ul {
+    padding: 0 10px;
+}
 @keyframes clockwise {
     0% {
         top: -5px;
@@ -929,6 +966,7 @@ footer .overlay {
 
 .vision {
     background-color: rgb(250, 235, 215);
+    padding: 40px 0;
 }
 
 .vision img {
@@ -946,12 +984,14 @@ footer .overlay {
 }
 
 .vision .content_vision ul li {
-    font-size: 15px;
+    font-size:small;
     font-family: 'Open Sans', sans-serif;
+    list-style: none;
 }
 
-.vision .content_vision h2 {
+.vision .content_vision h3 {
     color: #ff6816;
+    padding: 10px;
 }
 
 .content_vision_main {
@@ -969,13 +1009,15 @@ footer .overlay {
 /* -----------------history---------------- */
 .history h1 {
     text-align: center;
+    font-size: 24px;
     padding: 30px 0 0 0;
 }
 
 .history h4 {
-    font-size: 1.2em;
+    font-weight: 200;
     text-align: center;
     padding: 0 0 30px 0;
+    text-indent: 30px;
 }
 
 .timeline {
@@ -1131,8 +1173,8 @@ footer .overlay {
 .organizational h1 {
     margin-top: 70px;
     text-align: center;
-    color: rgb(255, 94, 21);
-    font-size: 30px;
+    
+    font-size: 24px;
 }
 
 .organizational {
@@ -1147,10 +1189,10 @@ footer .overlay {
 
 /* ---------------------------Boss---------------------------- */
 .boss h1 {
-    margin-top: 70px;
+    
     text-align: center;
-    color: rgb(255, 94, 21);
-    font-size: 30px;
+    color: rgb(8, 22, 59);
+    font-size: 24px;
 }
 
 .boss .chairman {
@@ -1164,6 +1206,7 @@ footer .overlay {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 20px 0;
 
 }
 
@@ -1173,14 +1216,10 @@ footer .overlay {
     padding-top: 334px;
 }
 
-.boss .manager {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
 .boss {
     background-color: antiquewhite;
+    padding: 40px 10px;
 }
 
 .vice_pad {
@@ -1246,14 +1285,54 @@ footer .overlay {
 .flickity-prev-next-button.previous {
     display: none;
 }
-
-
-
-
-
-
-
-
+.person{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.person .img-person img{
+    width: 300px;
+    
+}
+.person div{
+    padding:0 20px;
+}
+.review p{
+    font-weight: 500;
+}
+.review p:nth-child(2){
+    font-size: x-large;
+  
+    letter-spacing: 3px;
+    font-weight: 600;
+    line-height: 50px;
+    position: relative;
+}
+.review p:nth-child(2)::after{
+    position: absolute;
+    width: 100%;
+    background-color: rgb(255, 94, 21);
+    color: rgb(255, 94, 21);
+    height: 1px;
+    content: '';
+    display: block;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+}
+.review p:last-child{
+    padding: 10px 0;
+}
+.review{
+    margin-top: 50%;
+    transform: translateY(-50%);
+}
+.item-person{
+    padding: 30px;
+}
+.item-person img{
+    width: 230px;
+}
 
 
 /* ----------------------------------------------------- */
@@ -1275,3 +1354,31 @@ footer .overlay {
 @media only screen and (max-width: 370px) {}
 
 @media only screen and (max-width: 300px) {}
+
+/* .title-1::after {
+    content: '';
+    width: 30px;
+    position: absolute;
+    background-color: rgb(255, 94, 21);
+    bottom: -30px;
+    left: 50%;
+
+    display: block;
+
+    height: 8px;
+    border-radius: 6px;
+    transform: translate(-50%, +30%)
+} */
+
+/* .title-1::before {
+    content: '';
+    width: 90px;
+    position: absolute;
+    background-color: grey;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+
+    height: 3px;
+} */

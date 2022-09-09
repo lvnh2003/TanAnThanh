@@ -182,17 +182,8 @@ if (isset($_GET['id'])) {
             <div class="title-big">
                 CÓ THỂ BẠN QUAN TÂM
             </div>
-        </div>
-
-
-
-
-    </div>
-    <!-- <div class="flickity-slider" data-aos="slide-up" data-aos-duration="1100">
-            <div class="title-big">
-                CÓ THỂ BẠN QUAN TÂM
-            </div>
-        <div class="slide" data-flickity='{"autoPlay" : 1500,"wrapAround" : true ,"lazyLoad" : 0.5}'>
+            <div class="content">
+            
             <?php while ($key = mysqli_fetch_array($result_more)) { ?>
                 <div class="slide-item">
                     <img src="../asset/uploads/<?php echo $key['image_title_name'] ?>" alt="" onclick="window.open('detail.php?id=<?php echo $key['id'] ?>','_self')">
@@ -208,7 +199,20 @@ if (isset($_GET['id'])) {
                 </div>
             <?php } ?>
 
+                
+
+            </div>
         </div>
+
+
+
+
+    </div>
+    <!-- <div class="flickity-slider" data-aos="slide-up" data-aos-duration="1100">
+            <div class="title-big">
+                CÓ THỂ BẠN QUAN TÂM
+            </div>
+        
     </div> -->
 
     <footer data-aos="fade-in">

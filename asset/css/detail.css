@@ -17,10 +17,11 @@ body{
     display: flex;
     flex-wrap: wrap;
    
-    padding: 50px 20px;
+    padding: 40px 20px;
+    justify-content: space-around;
 }
 .container .new{
-    max-width: 959px;
+    max-width: 984px;
 }
 .container .new .title {
     padding: 20px 0;
@@ -61,7 +62,7 @@ body{
     padding: 10px 15px;
     background-color: rgb(255, 94, 21);
     color: white;
-    display: inline;
+    
     font-size: large;
     
 }
@@ -83,18 +84,18 @@ body{
 .slide-item{
     width: 270px;
     height: 380px;
-    margin: 20px 33px;
+   
     border: 1px solid rgb(174, 170, 170);
-    /* text-align: center; */
-    /* align-items: center; */
+    
     background-color: rgb(240, 240, 240);
     padding-bottom: 20px;
+    margin: 10px 0;
     
 
 }
 .slide-item img{
-    width: 100%;
-    height: 183px;
+   width: 270px;
+    height:auto;
     cursor: pointer;
     
 }
@@ -123,6 +124,7 @@ body{
     margin-left: 50%;
     transform: translateX(-50%);
     color: green;
+    
 }
 .image{
     padding-top: 35px;
@@ -130,6 +132,17 @@ body{
 @media only screen and (max-width: 600px){
     .care{
         padding: 20px 0 !important;
+    }
+    .slide-item{
+        width: 90%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    .slide-item img{
+        width: 100%;
+    }
+    .new .image{
+        width: 80%;
     }
 }
 @media only screen and (max-width: 300px){
@@ -141,5 +154,9 @@ body{
      
  }
  .care {
-    padding: 0 30px;
+    padding: 20px 10px;
+
+ }
+ .care .content{
+    padding-top: 30px;
  }
