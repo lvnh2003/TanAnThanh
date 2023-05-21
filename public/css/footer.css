@@ -1,0 +1,118 @@
+footer {
+    background-image: url("../image/Zaraa-700x367.png");
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+  }
+  footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  footer .title {
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+  
+  footer .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    padding: 20px 50px;
+  }
+  
+  footer .content .content-footer .title-footer {
+    font-size: 23px;
+    color: white;
+    font-family: "UTM Avo";
+    font-weight: bold;
+    padding-top: 20px;
+  }
+  footer .content .content-footer .text {
+    color: white;
+    font-family: "UTM Avo";
+    padding-top: 20px;
+    font-size: 14px;
+    max-width: 300px;
+    line-height: 30px;
+    margin-top: -5px;
+  }
+  footer .content .content-footer .item-social {
+    display: flex;
+  }
+  footer .content .content-footer img {
+    width: 200px;
+  }
+  
+  footer .content .content-footer ul li {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: white;
+    list-style: none;
+    position: relative;
+    font-family: "UTM Avo";
+    font-size: 14px;
+    font-weight: 300;
+  }
+  footer .content .content-footer ul li i {
+    min-width: 20px;
+    padding-right: 10px;
+    color: #ed2226;
+  }
+  
+  footer .content .content-footer:nth-child(2) ul li::before {
+    content: "›";
+    font-weight: bold;
+    color: #ed2226;
+    display: block;
+    position: absolute;
+    left: -20px;
+    font-family: fl-icons;
+  }
+  footer .content .content-footer:nth-child(2) ul li:hover {
+    text-decoration: underline;
+    color: #ed2226;
+  }
+  
+  footer .content .content-footer .circle {
+    width: 40px;
+    height: 30px;
+    padding-top: 10px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 30px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  footer .overlay {
+    padding-top: 50px;
+  
+    background-color: rgb(8, 22, 59, 0.6);
+  }
+  
+  .footer-2nd {
+    width: 100%;
+    background-color: rgb(211, 211, 211);
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    font-size: smaller;
+  }
+  
+  .footer-2nd div img {
+    width: 100px;
+  }
+  
+  .footer-2nd div span {
+    margin-top: -30px;
+  }
+  

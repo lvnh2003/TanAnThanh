@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "UTM Avo", sans-serif;
+}
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url(../font/HelveticaNeue.otf);
+}
+@font-face {
+    font-family: "UTM Avo";
+    src: url(../font/UTM\ Neo\ Sans\ Intel.ttf);
+}
+@font-face {
+    font-family: 'UTM Libel KT';
+    src: url(../font/UTM\ Libel\ KT.ttf);
+}
+.container {
+    display: flex;
+    padding: 0 5%;
+    background-color: #f1f2f1;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+}
+/* content right */
+.list-menu {
+    width: 35%; /* Đặt độ rộng của sidebar */
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow: auto;
+    padding: 20px;
+}
+.list-menu::before {
+    /* left: -35px; */
+    z-index: 0;
+    content: "";
+    display: inline-block;
+    width: 96px;
+    height: 67px;
+    background-color: #e0e3e0;
+    position: absolute;
+    z-index: -1;
+}
+.list-menu .title {
+    font-weight: bold;
+    font-size: 25px;
+    color: #3d0a0a;
+}
+.list-menu .content {
+    line-height: 30px;
+    font-size: 14px;
+}
+.list-menu .list ol {
+    padding-top: 20px;
+}
+.list-menu .list ol li {
+    list-style: none;
+}
+.list-menu .list ol li a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #3d0a0a;
+    text-decoration: none;
+    line-height: 30px;
+}
+.list-content {
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    max-width: 55%;
+    flex-grow: 1;
+}
+.list-content .content {
+    padding: 20px 0;
+}
+.list-content .title {
+    color: #751314;
+    font-family: "UTM Avo";
+    padding: 10px 20px;
+    font-size: 30px;
+}
+.list-content .introduce {
+    border-left: 5px solid #751314 !important;
+    font-style: unset;
+    font-size: 15px;
+    font-family: "UTM Avo";
+    font-weight: bold;
+    line-height: 30px;
+    padding-left: 20px; /* Điều chỉnh khoảng cách theo nhu cầu */
+}
+.list-content .content::before {
+    content: url(https://lss.vn/wp-content/uploads/2020/09/bg-horizontal.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 20px;
+    z-index: -1;
+}
+.list-content .content-text {
+    line-height: 30px;
+    padding-top: 50px;
+    font-size: 15px;
+}
+.content-text ul {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.content-text ul li {
+    list-style: none;
+    padding: 5px 0;
+    line-height: 30px;
+}
+.content-text ul li .image img {
+    width: 100%;
+}
+.list-content .content .main-content .image-container .image {
+    padding: 10px 0;
+}
+.list-content .content .main-content .image-container .image .image-item img {
+    width: 100%;
+}
+.list-content .content .main-content .image-container .image .detail {
+    text-align: center;
+    padding: 15px;
+    font-family: "UTM Avo";
+    font-style: italic;
+    font-size: 20px;
+}
+.list-content .content .main-content .team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+.list-content .content .main-content .team .boss {
+}
+.list-content .content .main-content .team .boss img {
+    width: 350px;
+}
+.list-content .content .main-content .team .name {
+    font-size: 30px;
+    font-family: "UTM Libel KT";
+    color: #751314;
+    text-transform: uppercase;
+    text-align: center;
+}
+.list-content .content .main-content .team .duty {
+    font-size: 20px;
+    font-family: "UTM Libel KT";
+    text-transform: uppercase;
+    text-align: center;
+}
+.list-content .content .main-content .team .other img {
+    width: 200px;
+}
+.list-content .content .main-content .team .other div {
+    padding-bottom: 15px;
+    margin: auto;
+}
+#section3 {
+    padding-bottom: 0;
+}
+@media only screen and (max-width: 600px) {
+    .list-menu {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .list-content {
+        max-width: 100%;
+    }
+    .list-content .content::before {
+        content: none;
+    }
+
+    .list-content .content .main-content .team .boss {
+        padding-bottom: 20px;
+    }
+    .list-content .content .main-content .team .other {
+        margin: auto;
+    }
+}
