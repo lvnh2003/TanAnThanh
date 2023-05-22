@@ -11,67 +11,74 @@
     font-family: "UTM Avo";
     src: url(../font/UTM\ Neo\ Sans\ Intel.ttf);
 }
+@font-face {
+    font-family: "UTM Libel KT";
+    src: url(../font/UTM\ Libel\ KT.ttf);
+}
+@font-face {
+    font-family: "Libel Suit";
+    src: url(../font/libel-suit-rg.otf);
+}
 body {
     overflow-x: hidden;
     width: 100%;
+    height: 100%;
 }
+
 /* 4 reactangle bottom the home */
-.content-behind-header {
-    display: flex;
-    position: absolute;
-    bottom: -40px;
-    justify-content: center;
-    width: 100%;
-    justify-self: center;
-}
-.content-behind-header .item {
-    width: 22%;
-    color: white;
-    text-align: center;
+.content-bottom-header {
     list-style: none;
     display: flex;
+    justify-content: center;
+    /* padding:0 20px; */
+    counter-reset: item-counter;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+}
+
+.content-bottom-header .rectangle-item {
+    flex-basis: 22%;
     margin: 10px;
     background-color: white;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
-}
-.content-behind-header .item .item-header {
-    width: 10%;
-    background-color: #ed2226;
-    font-size: 48px;
-    padding: 0px;
-    font-family: "UTM Avo";
-    margin: auto;
-    padding: 2px 16px;
-    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.3);
-}
-.content-behind-header .item .item-content {
-    color: black;
-    margin: auto;
+    position: relative;
     display: flex;
-    flex-direction: column;
-    width: 90%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;   
+}
+.content-bottom-header .rectangle-item::before {
+    content: counter(item-counter);
+    counter-increment: item-counter;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 15px;
+    background-color: #751314;
+    font-size: 50px;
     height: 100%;
+    color: #f2f2f2;
 }
-.content-behind-header .item .item-content .header {
+.content-bottom-header .rectangle-item .item-content {
     text-align: center;
-    width: 100%;
-    /* background-color: #ed2226; */
-    height: 50%;
-    margin-top: 10px;
+    padding: 15px 20px;
+    background-color: white;
+    margin-left: 20px;
 }
-.content-behind-header .item .item-content .header h3 {
-    font-size: 26;
-    font-weight: 500;
-    line-height: 1.5;
+.content-bottom-header .rectangle-item .item-content h3 {
+    font-family: "Libel Suit" !important;
+    letter-spacing: 2px;
+    font-weight: 300;
 }
-.content-behind-header .item .item-content .content {
-    color: grey;
-    height: 50%;
+.content-bottom-header .rectangle-item .item-content .onMoblie{
+    display: none !important;
 }
 /* preview company */
 .preview-company {
     width: 100%;
-    padding-top: 30px;
+    padding-top: 40px;
 
     display: flex;
     justify-content: center;
@@ -404,7 +411,7 @@ body {
     margin-top: 15px;
     display: inline;
     text-align: center;
-    font-family: 'UTM Avo';
+    font-family: "UTM Libel KT";
 }
 
 .title::after {
@@ -417,8 +424,7 @@ body {
 
     display: block;
 
-    height: 8px;
-    border-radius: 6px;
+    height: 5px;
     transform: translate(-50%, +30%);
 }
 
@@ -451,21 +457,50 @@ body {
     line-height: 20px;
 }
 @media only screen and (max-width: 600px) {
+    .slide-show {
+        padding-bottom: 80%;
+    }
     /* 4 reactangle  */
-    .content-behind-header .item .item-header {
-        display: none;
-        font-family: "UTM Avo";
+    .content-bottom-header{
+        justify-content: space-between;
+        padding: 0;
     }
-    .content-behind-header .item .item-content .header {
-        color: white;
-        margin-top: 0 !important;
+    .content-bottom-header .rectangle-item{
+        background-color: transparent;
     }
-    .content-behind-header .item {
-        background-color: #ed2226 !important;
+    .content-bottom-header .rectangle-item::before{
+        content: none;
+
     }
-    /* preview compayny */
+    .content-bottom-header .rectangle-item{
+        width: 23%;
+        margin: 0;
+    }
+    .content-bottom-header .rectangle-item .item-content{
+        margin-left: 0;
+    }
+    .content-bottom-header .rectangle-item .item-content h3{
+        padding: 10px 0;
+    letter-spacing: 1px;
+    background-color: #751314;
+    color : white
+    }
+    .content-bottom-header .rectangle-item .item-content{
+        padding: 0;
+        width: 100%;
+    }
+    .content-bottom-header .rectangle-item .item-content .content{
+        padding: 10px 0;
+    }
+    .content-bottom-header .rectangle-item .item-content .onMoblie{
+        display: block !important;
+    }
+    .content-bottom-header .rectangle-item .item-content .onPC{
+        display: none !important;
+    } 
+       /* preview compayny */
     .preview-company .content img {
-        margin-left: -10px;
+        display: none;
     }
 
     .advise .item-advise img {
@@ -562,9 +597,6 @@ body {
 }
 
 @media only screen and (max-width: 400px) {
-    .image-border {
-        width: 310px !important;
-    }
     .preview-company .content img {
         width: 300px;
         height: auto;

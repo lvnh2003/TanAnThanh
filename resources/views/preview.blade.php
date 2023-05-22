@@ -6,7 +6,7 @@
     Giới thiệu
 @endsection
 @section('image')
-https://lss.vn/wp-content/uploads/2021/03/Ho-ca-koi-LSS.jpg
+    https://lss.vn/wp-content/uploads/2021/03/Ho-ca-koi-LSS.jpg
 @endsection
 @section('content-header')
     GIỚI THIỆU
@@ -170,7 +170,7 @@ https://lss.vn/wp-content/uploads/2021/03/Ho-ca-koi-LSS.jpg
                     </div>
                     <div class="team">
                         <div class="boss">
-                            <img src="{{asset('/image/founder.jpg')}}" alt="">
+                            <img src="{{ asset('/image/founder.jpg') }}" alt="">
                             <div class="name">
                                 trà quốc bảo
                             </div>
@@ -180,7 +180,7 @@ https://lss.vn/wp-content/uploads/2021/03/Ho-ca-koi-LSS.jpg
                         </div>
                         <div class="other">
                             <div class="item">
-                                <img src="{{asset('/image/co-fouder.jpg')}}" alt="">
+                                <img src="{{ asset('/image/co-fouder.jpg') }}" alt="">
                                 <div class="name">
                                     nguyễn thị hồng vân
                                 </div>
@@ -189,7 +189,7 @@ https://lss.vn/wp-content/uploads/2021/03/Ho-ca-koi-LSS.jpg
                                 </div>
                             </div>
                             <div class="item">
-                                <img src="{{asset('/image/manager.jpg')}}" alt="">
+                                <img src="{{ asset('/image/manager.jpg') }}" alt="">
                                 <div class="name">
                                     nguyễn minh hoàng
                                 </div>
@@ -226,6 +226,31 @@ https://lss.vn/wp-content/uploads/2021/03/Ho-ca-koi-LSS.jpg
                     sidebarLink.style.fontSize = "14px";
                     sidebarLink.style.textDecoration = 'none';
                 }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
             });
         });
     </script>

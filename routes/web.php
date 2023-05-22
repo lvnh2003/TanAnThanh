@@ -16,6 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 })->name('index');
-Route::get('/preview',function(){
+Route::get('/gioi-thieu-tan-an-thanh',function(){
     return view('preview');
 })->name('preview');
+Route::get('/tuyen-dung-nhan-su',function(){
+    return view('recruit');
+})->name("recruit");
+Route::get("lien-he",function(){
+    return view('contact');
+})->name('contact');

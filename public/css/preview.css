@@ -12,16 +12,23 @@
     src: url(../font/UTM\ Neo\ Sans\ Intel.ttf);
 }
 @font-face {
-    font-family: 'UTM Libel KT';
+    font-family: "UTM Libel KT";
     src: url(../font/UTM\ Libel\ KT.ttf);
+}
+body {
+    scroll-behavior: smooth;
+    background-color: #f1f2f1;
 }
 .container {
     display: flex;
     padding: 0 5%;
     background-color: #f1f2f1;
     justify-content: space-around;
-    flex-wrap: wrap;
     position: relative;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
 }
 /* content right */
 .list-menu {
@@ -114,6 +121,12 @@
 .content-text ul li .image img {
     width: 100%;
 }
+.content-text div {
+    padding-top: 20px;
+}
+.content-text div .text{
+    text-indent: 20px
+}
 .list-content .content .main-content .image-container .image {
     padding: 10px 0;
 }
@@ -132,8 +145,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 50px;
-}
-.list-content .content .main-content .team .boss {
 }
 .list-content .content .main-content .team .boss img {
     width: 350px;
@@ -161,7 +172,93 @@
 #section3 {
     padding-bottom: 0;
 }
+.content-text form .item-input {
+    position: relative;
+}
+.content-text form .item-input .item:first-child {
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+.content-text form .item-input .item:first-child span{
+    padding: 12px;
+    transform: translateY(-50%);
+    
+}
+.content-text form .item-input .item input{
+    width: 97%;
+    border-radius: 0;
+    height: 2.507em;
+    background-color: white;
+    border: 1px solid grey;
+    color: black;
+    font-size: .97em;
+    padding-left: 35px;
+}
+.content-text form .item-input .item input:focus{
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+.content-text form .item-input .item textarea{
+    min-width: 100%;
+    padding: 10px;
+    font-size: .97em;
+}
+.content-text form .item-input .item textarea:focus{
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+.content-text form .item-input .item button{
+    cursor: pointer;
+    padding: 15px 10px;
+    background-color: #751314;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+.content-text form .item-input .item button:hover{
+    border: 1px solid #751314;
+    background-color: white;
+    color:#751314;
+
+}
+.map {
+    width: 100%;
+    padding: 30px 0;
+}
+.map .title{
+    text-align: center;
+    padding: 20px;
+    font-size: 200%;
+}
+.map .title span {
+    padding: 0 20px;
+    border-left: 5px solid #751314 ;
+    border-top: 5px solid #751314 ; 
+}
+.list ul li {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    list-style: none;
+    position: relative;
+    font-family: "UTM Avo";
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .list ul li i {
+    min-width: 20px;
+    padding-right: 10px;
+    color: #751314;
+  }
+  @media only screen and (max-width: 768px){
+    .container{
+        flex-wrap: nowrap;
+    }
+  }
 @media only screen and (max-width: 600px) {
+    .container{
+        flex-wrap: wrap;
+    }
     .list-menu {
         position: relative;
         width: 100%;

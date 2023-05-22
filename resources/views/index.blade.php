@@ -11,18 +11,16 @@
 @endsection
 @section('item-behind')
     <div>
-        <ul class="content-behind-header">
+        {{-- <ul class="content-bottom-header">
             <li class="item">
-                <div class="item-header">1</div>
                 <div class="item-content">
                     <div class="header">
-                        <h3>Dịch vụ</h3>
+                        <h3></h3>
                     </div>
-                    <div class="content">May đồng phục</div>
+                    <div class="content"></div>
                 </div>
             </li>
             <li class="item">
-                <div class="item-header">2</div>
                 <div class="item-content">
                     <div class="header">
                         <h3>Chất lượng</h3>
@@ -31,24 +29,53 @@
                 </div>
             </li>
             <li class="item">
-                <div class="item-header">3</div>
                 <div class="item-content">
                     <div class="header">
-                        <h3>Tiêu chuẩn</h3>
+                        <h3></h3>
                     </div>
-                    <div class="content">Đạt tiêu chuẩn cao</div>
+                    <div class="content"></div>
                 </div>
             </li>
             <li class="item">
-                <div class="item-header">4</div>
                 <div class="item-content">
                     <div class="header">
-                        <h3>Thiết bị</h3>
+                        <h3></h3>
                     </div>
-                    <div class="content">Cung cấp từ nước ngoài</div>
+                    <div class="content"></div>
                 </div>
             </li>
-        </ul>
+        </ul> --}}
+        <ul class="content-bottom-header">
+            <li class="rectangle-item">
+              <div class="item-content">
+                <h3>Dịch vụ</h3>
+                <div class="content onPC">May đồng phục</div>
+                <div class="content onMoblie">May mặc</div>
+              </div>
+            </li>
+            <li class="rectangle-item">
+              <div class="item-content">
+                <h3>Chất lượng</h3>
+                <div class="content onPC">Được đặt lên hàng đầu</div>
+                <div class="content onMoblie">Hàng đầu</div>
+              </div>
+            </li>
+            <li class="rectangle-item">
+              <div class="item-content">
+                <h3>Tiêu chuẩn</h3>
+                <div class="content onPC">Đạt tiêu chuẩn cao</div>
+                <div class="content onMoblie">Không biết</div>
+              </div>
+            </li>
+            <li class="rectangle-item">
+              <div class="item-content">
+                <h3>Thiết bị</h3>
+                <div class="content onPC">Cung cấp từ nước ngoài</div>
+                <div class="content onMoblie">Chất lượng</div>
+              </div>
+            </li>
+          </ul>
+          
     </div>
 @endsection
 @section('content-header')

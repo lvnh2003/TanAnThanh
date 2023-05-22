@@ -47,9 +47,9 @@
             <ul id="bars">
                 <li><a href="{{route('index')}}">Trang chủ</a></li>
                 <li><a href="{{route('preview')}}">Giới thiệu</a></li>
-                <li><a href="new.html">Tin tức & Sự kiện</a></li>
-                <li><a href="recruit.html">Tuyển dụng</a></li>
-                <li><a href="contact.html">Liên hệ</a></li>
+                <li><a href="">Tin tức & Sự kiện</a></li>
+                <li><a href="{{route('recruit')}}">Tuyển dụng</a></li>
+                <li><a href="{{route('contact')}}">Liên hệ</a></li>
             </ul>
         </nav>
     </div>
@@ -58,9 +58,9 @@
        
         <img src="https://lss.vn/wp-content/uploads/2021/03/Vien-banner-lss-1280x1280.png" alt=""
             class="image-border" />
-            <h2>
+            <h3>
                 @yield('content-header')
-            </h2>
+            </h3>
         
     </div>
     <!-- 4 reactangle below theo big image -->
