@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MainController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,3 +26,13 @@ Route::get('/tuyen-dung-nhan-su',function(){
 Route::get("lien-he",function(){
     return view('contact');
 })->name('contact');
+Route::get('/tin-tuc',function(){
+    return view('news');
+})->name('news');
+Route::prefix('admin')->group(function () {
+    Route::group(['controller' => MainController::class,'as'=> 'admin.'],function(){
+        Route::get('/','index')->name('index');
+    });
+    
+});
+

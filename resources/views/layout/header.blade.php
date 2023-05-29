@@ -39,31 +39,31 @@
     <!-- menu bar -->
     <div class="menu-bar">
         <nav>
-            <img src="{{asset('/image/TAT-logo-chuanar-e1644918338966.png')}}" alt="" />
+            <img src="{{ asset('/image/TAT-logo-chuanar-e1644918338966.png') }}" alt="" />
             <input type="checkbox" id="check" />
-            <label for="check" class="hidden">
+            <label for="check" class="hidden" style="position: relative">
                 <i class="fa fa-bars" aria-hidden="true"></i>
             </label>
             <ul id="bars">
-                <li><a href="{{route('index')}}">Trang chủ</a></li>
-                <li><a href="{{route('preview')}}">Giới thiệu</a></li>
-                <li><a href="">Tin tức & Sự kiện</a></li>
-                <li><a href="{{route('recruit')}}">Tuyển dụng</a></li>
-                <li><a href="{{route('contact')}}">Liên hệ</a></li>
+                <li><a href="{{ route('index') }}">Trang chủ</a></li>
+                <li><a href="{{ route('preview') }}">Giới thiệu</a></li>
+                <li><a href="{{ route('news') }}">Tin tức & Sự kiện</a></li>
+                <li><a href="{{ route('recruit') }}">Tuyển dụng</a></li>
+                <li><a href="{{ route('contact') }}">Liên hệ</a></li>
             </ul>
         </nav>
     </div>
 
     <div class="square">
-       
+
         <img src="https://lss.vn/wp-content/uploads/2021/03/Vien-banner-lss-1280x1280.png" alt=""
             class="image-border" />
-            <h3>
-                @yield('content-header')
-            </h3>
-        
+        <h3>
+            @yield('content-header')
+        </h3>
+
     </div>
     <!-- 4 reactangle below theo big image -->
-    
+
     @yield('item-behind')
 </div>
