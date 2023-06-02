@@ -29,10 +29,14 @@ Route::get("lien-he",function(){
 Route::get('/tin-tuc',function(){
     return view('news');
 })->name('news');
-Route::prefix('admin')->group(function () {
-    Route::group(['controller' => MainController::class,'as'=> 'admin.'],function(){
-        Route::get('/','index')->name('index');
-    });
+// Route::prefix('admin')->group(function () {
+//     Route::group(['controller' => MainController::class,'as'=> 'admin.'],function(){
+//         Route::get('/',function(){
+//            return view('admin.index')
+//         });
+//     });
     
+// });
+Route::get('/admin1',function(){
+    return view('admin.index');
 });
-
