@@ -256,7 +256,6 @@
                     var id = heading.parentElement.id;
                     var sidebarLink = document.querySelector('a[href="#' + id + '"]');
                     sidebarLink.style.fontSize = "20px";
-                    sidebarLink.style.textDecoration = "underline";
                 } else {
                     var id = heading.parentElement.id;
                     var sidebarLink = document.querySelector('a[href="#' + id + '"]');

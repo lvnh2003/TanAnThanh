@@ -23,6 +23,7 @@ body {
     overflow-x: hidden;
     width: 100%;
     height: 100%;
+    background-color: #eee;
 }
 
 /* 4 reactangle bottom the home */
@@ -57,7 +58,7 @@ body {
     top: 0;
     left: 0;
     padding: 0 15px;
-    background-color: #751314;
+    background-color: black;
     font-size: 50px;
     height: 100%;
     color: #f2f2f2;
@@ -100,6 +101,7 @@ body {
 
     height: 430px;
     border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
 .preview-company .content {
@@ -112,16 +114,18 @@ body {
 }
 
 .preview-company .content .title {
-    font-size: 40px;
+    font-size: 50px;
     padding-top: 15px;
     line-height: 50px;
-    font-weight: bold;
     position: relative;
     color: rgb(8, 22, 59);
     text-transform: uppercase;
     margin-top: 15px;
     display: block;
     text-align: center;
+    word-spacing: 3px;
+    letter-spacing: 3px;
+    font-weight: 100;
 }
 
 .preview-company .content:first-child {
@@ -156,15 +160,17 @@ body {
     cursor: pointer;
     overflow: hidden;
     border-radius: 20px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
 .info {
     text-align: center;
     padding-top: 10px;
-
     color: rgb(8, 22, 59);
-    font-weight: bold;
     padding-bottom: 10px;
+    text-transform: capitalize;
+    font-size: 20px;
+
 }
 .image-background {
     width: 375px;
@@ -254,7 +260,6 @@ body {
 }
 .about .name {
     font-size: xx-large;
-    font-weight: bold;
     color: white;
     position: relative;
     padding-bottom: 20px;
@@ -262,7 +267,7 @@ body {
 }
 .about .word {
     font-family: "UTM Avo";
-    font-size: 17px;
+    font-size: 18px;
     padding: 10px 20px;
     line-height: 30px;
     position: relative;
@@ -296,13 +301,14 @@ body {
     padding: 20px;
     position: relative;
     margin: 5px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    background-color: #fff;
 }
 
 .item .content-item:hover {
     cursor: pointer;
     transition: all 0.6s;
-    box-shadow: inset 2px 2px 4px 2px rgba(245, 3, 3, 0.2),
-        2px 2px 5px 2px rgba(211, 11, 11, 0.2);
+    
 }
 .item .content-item .image-service {
     overflow: hidden;
@@ -347,6 +353,8 @@ body {
 
 .advise .item-advise img {
     width: 650px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
 }
 
 .service1 {
@@ -359,9 +367,9 @@ body {
     padding: 15px 20px;
     background-color: #ed2226;
     color: white;
-    border: 1px solid grey;
     border-radius: 5px;
     text-align: center;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
 .btn-call-now:hover {
@@ -396,8 +404,8 @@ body {
 }
 /* title */
 .title {
-    font-size: xx-large;
-    font-weight: bold;
+    font-size: 50px;
+    font-weight: 100;
     position: relative;
     color: rgb(8, 22, 59);
     text-transform: uppercase;

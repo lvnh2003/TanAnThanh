@@ -13,15 +13,14 @@ return new class extends Migration
     {
         Schema::create('images', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('news_id');
-            $table->string('image_url');
-            // Thêm các trường thuộc tính khác của ảnh
+            $table->unsignedInteger('news_id');
+            $table->string('image_path');
+            $table->text('description')->nullable();
+            $table->text('content');
             $table->timestamps();
-
             $table->foreign('news_id')->references('id')->on('news')->onDelete('cascade');
         });
     }
-
     /**
      * Reverse the migrations.
      */

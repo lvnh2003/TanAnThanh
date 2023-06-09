@@ -142,7 +142,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="info">Sẩn phẩm</div>
+                <div class="info">Sản phẩm</div>
             </div>
             <div>
                 <div class="image">

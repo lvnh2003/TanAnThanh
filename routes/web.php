@@ -26,17 +26,17 @@ Route::get('/tuyen-dung-nhan-su',function(){
 Route::get("lien-he",function(){
     return view('contact');
 })->name('contact');
-Route::get('/tin-tuc',function(){
-    return view('news');
-})->name('news');
-// Route::prefix('admin')->group(function () {
-//     Route::group(['controller' => MainController::class,'as'=> 'admin.'],function(){
-//         Route::get('/',function(){
-//            return view('admin.index')
-//         });
-//     });
-    
-// });
+Route::get('/tin-tuc',[MainController::class,'news'])->name('news');
+Route::get('/tin-tuc/{slug}',[MainController::class,'detail'])->name('detail');
+Route::get('list',[MainController::class,'list'])->name('list');
+Route::post('/new/{id}',[MainController::class,'destroy'])->name('destroy');
 Route::get('/admin1',function(){
     return view('admin.index');
 });
+Route::get('/admin',function(){
+    return view('index');
+});
+Route::get('/post',function(){
+    return view('admin.post');
+})->name('post');
+Route::post('/post',[MainController::class,'upload'])->name('store');

@@ -45,11 +45,11 @@
                 <i class="fa fa-bars" aria-hidden="true"></i>
             </label>
             <ul id="bars">
-                <li><a href="{{ route('index') }}">Trang chủ</a></li>
-                <li><a href="{{ route('preview') }}">Giới thiệu</a></li>
-                <li><a href="{{ route('news') }}">Tin tức & Sự kiện</a></li>
-                <li><a href="{{ route('recruit') }}">Tuyển dụng</a></li>
-                <li><a href="{{ route('contact') }}">Liên hệ</a></li>
+                <li><a href="{{ route('index') }}">TRANG CHỦ</a></li>
+                <li><a href="{{ route('preview') }}">GIỚI THIỆU</a></li>
+                <li><a href="{{ route('news') }}">TIN TỨC & SỰ KIỆN</a></li>
+                <li><a href="{{ route('recruit') }}">TUYỂN DỤNG</a></li>
+                <li><a href="{{ route('contact') }}">LIÊN HỆ </a></li>
             </ul>
         </nav>
     </div>
