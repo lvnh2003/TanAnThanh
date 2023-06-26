@@ -64,7 +64,7 @@
               <div class="item-content">
                 <h3>Tiêu chuẩn</h3>
                 <div class="content onPC">Đạt tiêu chuẩn cao</div>
-                <div class="content onMoblie">Không biết</div>
+                <div class="content onMoblie">Cao cấp</div>
               </div>
             </li>
             <li class="rectangle-item">

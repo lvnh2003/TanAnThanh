@@ -30,11 +30,8 @@ Route::get('/tin-tuc',[MainController::class,'news'])->name('news');
 Route::get('/tin-tuc/{slug}',[MainController::class,'detail'])->name('detail');
 Route::get('list',[MainController::class,'list'])->name('list');
 Route::post('/new/{id}',[MainController::class,'destroy'])->name('destroy');
-Route::get('/admin1',function(){
-    return view('admin.index');
-});
 Route::get('/admin',function(){
-    return view('index');
+    return view('admin.index');
 });
 Route::get('/post',function(){
     return view('admin.post');

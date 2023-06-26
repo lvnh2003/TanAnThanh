@@ -78,6 +78,7 @@
             responsive: true,
                 processing: true,
                 serverSide: true,
+                pageLimit: 1,
                 ajax: "{{ route('list') }}",
                 columns:[
                     {
