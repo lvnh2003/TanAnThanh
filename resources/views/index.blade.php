@@ -1,10 +1,28 @@
 @extends('layout.main')
 @section('title')
-    Trang chủ
+    TAT - ĐƠN VỊ SẢN XUẤT QUẦN ÁO TÂN AN THÀNH
 @endsection
 @push('css')
     <link rel="stylesheet" href="{{ asset('css/index.css') }}">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+    <style>
+        @media (min-width: 550px) {
+            #text-box-1483701737 {
+                width: 50%;
+            }
+        }
+
+        text-box.chairman {
+            top: 35%;
+            left: 43%;
+        }
+
+        .dark,
+        .dark p,
+        .dark td {
+            color: #f1f1f1;
+        }
+    </style>
 @endpush
 @section('image')
     {{ asset('image/header-background.png') }}
@@ -47,35 +65,35 @@
         </ul> --}}
         <ul class="content-bottom-header">
             <li class="rectangle-item">
-              <div class="item-content">
-                <h3>Dịch vụ</h3>
-                <div class="content onPC">May đồng phục</div>
-                <div class="content onMoblie">May mặc</div>
-              </div>
+                <div class="item-content">
+                    <h3>Dịch vụ</h3>
+                    <div class="content onPC">May đồng phục</div>
+                    <div class="content onMoblie">May mặc</div>
+                </div>
             </li>
             <li class="rectangle-item">
-              <div class="item-content">
-                <h3>Chất lượng</h3>
-                <div class="content onPC">Được đặt lên hàng đầu</div>
-                <div class="content onMoblie">Hàng đầu</div>
-              </div>
+                <div class="item-content">
+                    <h3>Chất lượng</h3>
+                    <div class="content onPC">Được đặt lên hàng đầu</div>
+                    <div class="content onMoblie">Hàng đầu</div>
+                </div>
             </li>
             <li class="rectangle-item">
-              <div class="item-content">
-                <h3>Tiêu chuẩn</h3>
-                <div class="content onPC">Đạt tiêu chuẩn cao</div>
-                <div class="content onMoblie">Cao cấp</div>
-              </div>
+                <div class="item-content">
+                    <h3>Tiêu chuẩn</h3>
+                    <div class="content onPC">Đạt tiêu chuẩn cao</div>
+                    <div class="content onMoblie">Cao cấp</div>
+                </div>
             </li>
             <li class="rectangle-item">
-              <div class="item-content">
-                <h3>Thiết bị</h3>
-                <div class="content onPC">Cung cấp từ nước ngoài</div>
-                <div class="content onMoblie">Chất lượng</div>
-              </div>
+                <div class="item-content">
+                    <h3>Thiết bị</h3>
+                    <div class="content onPC">Cung cấp từ nước ngoài</div>
+                    <div class="content onMoblie">Chất lượng</div>
+                </div>
             </li>
-          </ul>
-          
+        </ul>
+
     </div>
 @endsection
 @section('content-header')
@@ -277,10 +295,44 @@
         </div>
     </div>
     <!-- content about the company -->
-    <div class="about"
+    <div class="about-section"
         style="
               background-image: url('https://lss.vn/wp-content/uploads/2023/01/Merryland-Koi-Chairman.jpg');
             ">
+        <div class="item" style="width: 80%;position: relative;;margin:auto">
+            <div id="text-box-1483701737"
+                class="text-box banner-layer chairman x50 md-x50 lg-x50 y10 md-y40 lg-y40 res-text"
+                style="margin: auto;position: absolute;left:10%;top:30%;">
+                <div data-animate="blurIn" data-animated="true">
+                    <div class="text dark">
+
+                        <div class="text-inner text-center">
+
+                            <div id="text-3430157419" class="text">
+
+                                <p style="text-align: left;"><i class="fa fa-quote-left"></i><span
+                                        style="color: #f1f1f1; font-size: 18px;"><em>&nbsp; &nbsp; &nbsp;Với hơn 20 năm
+                                            kinh nghiệm trong ngành công nghiệp thời trang,<strong><span style="color: #ed2226;"> Tân An Thành</span></strong> đã khẳng định vị
+                                            thế của mình là một công ty sản xuất quần áo đáng tin cậy và chất lượng. Với
+                                            niềm đam mê và sự tận tâm, chúng tôi đã xây dựng một thương hiệu độc đáo và được
+                                            người tiêu dùng tin yêu.&nbsp; &nbsp;&nbsp;</em></span><i
+                                        class="fa fa-quote-right"></i></p>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="image" style="width: 100%">
+                <img src="{{ asset('image/LSS-Chairman.png') }}" alt="" style="width: 100%;">
+
+            </div>
+
+
+        </div>
     </div>
     <!-- contact -->
     <div class="services">

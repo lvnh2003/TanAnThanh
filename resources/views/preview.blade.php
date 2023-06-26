@@ -3,7 +3,7 @@
     <link rel="stylesheet" href="{{ asset('css/preview.css') }}">
 @endpush
 @section('title')
-    Giới thiệu
+   TAT - GIỚI THIỆU VỀ CÔNG TY TNHH TÂN AN THÀNH
 @endsection
 @section('image')
     https://lss.vn/wp-content/uploads/2021/03/Ho-ca-koi-LSS.jpg
@@ -16,8 +16,9 @@
         <div class="list-menu">
             <div class="title">Giới thiệu</div>
             <div class="content">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed quis
-                iure ab dolorum? Volupta
+                Tân An Thành là một công ty sản xuất quần áo uy tín với hơn 20 năm kinh nghiệm và cam kết mang đến sản phẩm
+                chất lượng và phong cách độc đáo cho khách hàng. Chúng tôi tự hào là đơn vị đem đến sự tự tin và phong cách
+                sống thông qua những tác phẩm thời trang sáng tạo.
             </div>
             <div class="list">
                 <ol>

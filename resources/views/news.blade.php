@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="{{asset('css/new.css')}}">
 @endpush
 @section('title')
-    Tin tức
+    TAT - TIN TỨC
 @endsection
 @section('image')
     https://lss.vn/wp-content/uploads/2021/03/Ho-ca-koi-LSS.jpg
@@ -17,8 +17,7 @@
         <div class="list-menu">
             <div class="title">Tin tức</div>
             <div class="content">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed quis
-                iure ab dolorum? Volupta
+                Tin tức đóng vai trò quan trọng trong việc cung cấp thông tin, giáo dục và tạo nên nhận thức xã hội.
             </div>
         </div>
         <div class="list-content">

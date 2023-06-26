@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="{{ asset('css/preview.css') }}">
 @endpush
 @section('title')
-    Liên hệ
+    TAT - LIÊN HỆ
 @endsection
 @section('content-header')
     LIÊN HỆ
@@ -17,8 +17,7 @@
         <div class="list-menu" style="position: relative">
             <div class="title">Công ty TNHH Tân An Thành</div>
             <div class="content">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed quis
-                iure ab dolorum? Volupta
+                Nếu bạn có bất kỳ câu hỏi hoặc yêu cầu nào, xin vui lòng liên hệ với chúng tôi để được hỗ trợ từ phía quản trị.
             </div>
             <div class="list">
                 <ul>

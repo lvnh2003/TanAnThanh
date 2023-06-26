@@ -1,7 +1,7 @@
 @extends('layout.main')
 
 @section('title')
-    Tuyển dụng
+    TAT - HÌNH THỨC TUYỂN DỤNG NHÂN SỰ
 @endsection
 @section('content-header')
     TUYỂN DỤNG 

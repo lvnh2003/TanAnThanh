@@ -1,6 +1,6 @@
 @extends('layout.main')
 @section('title')
-    {{$news->title}}
+   TAT -  {{$news->title}}
 @endsection
 @push('css')
     <link rel="stylesheet" href="{{ asset('css/preview.css') }}">
@@ -17,8 +17,7 @@
     <div class="list-menu">
         <div class="title">Tin tức</div>
         <div class="content">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed quis
-            iure ab dolorum? Volupta
+            Tin tức đóng vai trò quan trọng trong việc cung cấp thông tin, giáo dục và tạo nên nhận thức xã hội.
         </div>
     </div>
     <div class="list-content">
