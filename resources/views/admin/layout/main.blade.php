@@ -42,15 +42,18 @@
         </div>
 
         <!-- Navbar -->
-        @include('admin.layout.header')
         <!-- /.navbar -->
+        @if (!(Route::currentRouteName() == 'login'))
+            @include('admin.layout.sidebar')
+        @endif
 
-        @include('admin.layout.sidebar')
 
         <!-- Content Wrapper. Contains page content -->
         @yield('content')
         <!-- /.content-wrapper -->
+        @if (!(Route::currentRouteName() == 'login'))
         @include('admin.layout.footer')
+        @endif
 
         <!-- Control Sidebar -->
         <aside class="control-sidebar control-sidebar-dark">
@@ -83,7 +86,8 @@
     <script src="{{ asset('admin_asset') }}/plugins/moment/moment.min.js"></script>
     <script src="{{ asset('admin_asset') }}/plugins/daterangepicker/daterangepicker.js"></script>
     <!-- Tempusdominus Bootstrap 4 -->
-    <script src="{{ asset('admin_asset') }}/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="{{ asset('admin_asset') }}/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js">
+    </script>
     <!-- Summernote -->
     <script src="{{ asset('admin_asset') }}/plugins/summernote/summernote-bs4.min.js"></script>
     <!-- overlayScrollbars -->

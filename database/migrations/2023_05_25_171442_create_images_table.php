@@ -18,7 +18,7 @@ return new class extends Migration
             $table->text('description')->nullable();
             $table->text('content');
             $table->timestamps();
-            $table->foreign('news_id')->references('id')->on('news')->onDelete('cascade');
+            $table->foreign('news_id')->references('id')->on('news')->onDelete('cascade')->onUpdate('cascade');
         });
     }
     /**

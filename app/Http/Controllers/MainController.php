@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\News;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 use Yajra\DataTables\Facades\DataTables;
 class MainController extends Controller
@@ -86,5 +87,24 @@ class MainController extends Controller
         $new= News::find($id);
         $new->delete();
         return back()->with('success','Xoá thành công');
+    }
+    public function login()
+    {
+        return view('admin.login');
+    }
+    public function check(Request $request)
+    {
+        if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
+            return view('admin.index');
+        }
+        else
+        {
+            return redirect()->back()->withErrors(['errorLogin' => 'メールアドレスまたはパスワードが間違っている!']);
+        }
+    }
+    public function logout()
+    {
+        Auth::logout();
+        return redirect()->route('login');
     }
 }
