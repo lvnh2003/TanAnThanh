@@ -104,15 +104,15 @@
                                 
                                 var descriptionInput = $('<input>')
                                     .addClass('form-control')
-                                    .attr('name', 'description_' + file.name.split('.').slice(0, -1).join('.'))
+                                    .attr('name', 'description_' + i)
                                     .attr('placeholder', 'Miêu tả hình ảnh...');
                                 var contentInput = $('<textarea>')
                                     .addClass('form-control')
-                                    .attr('name', 'content_' + file.name.split('.').slice(0, -1).join('.'))
+                                    .attr('name', 'content_' + i)
                                     .attr('placeholder', 'Thêm nội dung ở dưới ảnh...');
                                 var deleteButton = $('<span>')
                                     .addClass('btn btn-danger')
-                                    .html('Delete')
+                                    .html('Xoá')
                                     .addClass('delete-button');
                                 deleteButton.on('click', function() {
                                     $(this).closest('.image-container').remove();

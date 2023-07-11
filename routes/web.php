@@ -35,7 +35,7 @@ Route::post('/login',[MainController::class,'check'])->name('loginAction');
 Route::middleware('AdminLogin')->group(function(){
     Route::get('/admin',function(){
         return view('admin.index');
-    });
+    })->name('admin.index');
     Route::get('/post',function(){
         return view('admin.post');
     })->name('post');

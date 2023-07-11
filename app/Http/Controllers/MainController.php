@@ -32,13 +32,14 @@ class MainController extends Controller
         ]);
         if ($request->hasFile('images')) {
             $images = $request->file('images');
-            foreach ($images as $image) {
+            foreach ($images as $i => $image) {
                 $imageName = time() . '-' . $image->getClientOriginalName();
                 $folderImage = 'storage/news/';
                 $image->move($folderImage, $imageName);
-                $nameDes = 'description_' . substr($image->getClientOriginalName() , 0, strrpos($image->getClientOriginalName() , '.'));
-                $nameCon ='content_' .substr($image->getClientOriginalName() , 0, strrpos($image->getClientOriginalName() , '.'));
+                $nameDes = 'description_' .$i+1;
+                $nameCon ='content_' .$i+1;
                 $description = $request->input($nameDes);
+
                 $content = $request->input($nameCon);
                 $news->images()->create([
                     'image_path' =>  $imageName,
