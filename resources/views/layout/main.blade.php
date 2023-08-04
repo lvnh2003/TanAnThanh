@@ -40,6 +40,44 @@
                 );
             });
         });
+        $(document).ready(function() {
+            // Lắng nghe sự kiện khi input được focus
+            $('#searchInput').focus(function() {
+                showSearchResults();
+            });
+
+            // Lắng nghe sự kiện khi input mất focus
+            $('#searchInput').blur(function() {
+                // Kiểm tra nếu không click vào danh sách kết quả, thì mới ẩn danh sách
+                setTimeout(function() {
+                    if (!$('.search-results').is(':focus-within')) {
+                        hideSearchResults();
+                    }
+                }, 200); // Đợi 200ms để kiểm tra focus trong danh sách kết quả
+            });
+
+            // Lắng nghe sự kiện khi click vào danh sách kết quả
+            $('.search-results').on('click', '.search-result-item', function(e) {
+                e.stopPropagation(); // Ngăn chặn sự kiện click từ lan ra ngoài
+
+                // Xử lý logic khi click vào kết quả, ví dụ: điều hướng đến trang chi tiết
+                console.log('Đã click vào kết quả: ' + $(this).text());
+
+                // Ẩn danh sách kết quả sau khi click
+                hideSearchResults();
+            });
+
+            // Hiển thị danh sách kết quả tìm kiếm
+            function showSearchResults() {
+                $('.search-results').css('display', 'block');
+            }
+
+            // Ẩn danh sách kết quả tìm kiếm
+            function hideSearchResults() {
+                $('.search-results').css('display', 'none');
+            }
+
+        });
     </script>
 </body>
 

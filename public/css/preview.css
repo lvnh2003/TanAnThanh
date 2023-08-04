@@ -39,17 +39,6 @@ body {
     overflow: auto;
     padding: 20px;
 }
-.list-menu::before {
-    /* left: -35px; */
-    z-index: 0;
-    content: "";
-    display: inline-block;
-    width: 96px;
-    height: 67px;
-    background-color: #e0e3e0;
-    position: absolute;
-    z-index: -1;
-}
 .list-menu .title {
     font-weight: bold;
     font-size: 25px;

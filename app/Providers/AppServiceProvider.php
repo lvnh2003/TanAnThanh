@@ -1,9 +1,9 @@
 <?php
 
 namespace App\Providers;
-
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
-
+use App\Models\News;
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -19,6 +19,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //z
+        $data = News::all();
+        View::share('data',$data);
     }
 }

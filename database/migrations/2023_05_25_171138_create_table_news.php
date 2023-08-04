@@ -17,6 +17,7 @@ return new class extends Migration
             $table->text('content');
             $table->text('description');
             $table->string('slug');
+            $table->boolean('isInBin')->default(0);
             $table->timestamps();
         });
     }

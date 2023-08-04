@@ -41,6 +41,12 @@ Route::middleware('AdminLogin')->group(function(){
     })->name('post');
     Route::post('/post',[MainController::class,'upload'])->name('store');
     Route::get('list',[MainController::class,'list'])->name('list');
-Route::post('/new/{id}',[MainController::class,'destroy'])->name('destroy');
-Route::get('/logout',[MainController::class,'logout'])->name('logout');
+    Route::delete('/new/{id}',[MainController::class,'destroy'])->name('destroy');
+    Route::get('/logout',[MainController::class,'logout'])->name('logout');
+    Route::get('/dustbin',[MainController::class,'bin'])->name('bin');
+    Route::get('listBin',[MainController::class,'listBin'])->name('listBin');
+    Route::post('moveBin/{id}',[MainController::class,'moveBin'])->name('moveBin');
+    Route::post('/change/{id}',[MainController::class,'change'])->name('change');
+    Route::delete('/deleteAll',[MainController::class,'removeAll'])->name('removeAll');
 });
+Route::get('/data',[MainController::class,'data'])->name('getAllNews');

@@ -98,6 +98,8 @@
     {{-- <script src="{{asset('admin_asset')}}/dist/js/demo.js"></script> --}}
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     <script src="{{ asset('admin_asset') }}/dist/js/pages/dashboard.js"></script>
+    <!-- SweetAlert2 -->
+    <script src="{{ asset('admin_asset') }}/plugins/sweetalert2/sweetalert2.min.js"></script>
     @stack('js')
 </body>
 
