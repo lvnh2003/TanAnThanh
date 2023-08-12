@@ -42,13 +42,15 @@
                 padding: 10px;
                 overflow-y: auto;
                 position: relative;
+                border-radius:10px;
                 display:none" class="search-results">
+                <div class="text-suggestion" style="color: black;font-size:13px">Có phải bạn muốn tìm</div>
                     @foreach ($data as $new)
                         <li class="search-result-item" style="color:black;width:100%;list-style: none;margin: 5px 0">
                             <a href="{{route('detail',$new->slug)}}"  class="search-result-link" style="text-decoration: none;">
                             <div style="display: flex;" class="search-result-content">
                                 <div class="search-result-image">
-                                    <img class="search-result-image-inner" src="{{$new->getImage()}}" alt="" style="width: 100px;height: 50px;object-fit: cover;">
+                                    <img class="search-result-image-inner" src="{{$new->getImage()}}" alt="" style="width: 80px;height: 40px;object-fit: cover;">
                                 </div>
                                 <div class="search-result-title" class="search-result-text" style="word-wrap: break-word;max-width: 50%;font-size: 13px;color:black ">
                                         <p > {{strlen($new->title)<30? $new->description : substr($new->title,0,30).'...'}} </p>

@@ -290,7 +290,6 @@ label img {
 .search-results {
     height: auto;
     background-color: white;
-    opacity: 0.9;
     padding: 10px;
     overflow-y: auto;
 }

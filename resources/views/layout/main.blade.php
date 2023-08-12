@@ -45,7 +45,34 @@
             $('#searchInput').focus(function() {
                 showSearchResults();
             });
+            $('#searchInput').on('input', function() {
+                    var searchText = $(this).val().toLowerCase();
+                    var resultsFound = false; // Flag to track if any search results are found
 
+                    // Loop through each search result item
+                    $('.search-results .search-result-item').each(function() {
+                        var title = $(this).find('.search-result-title').text()
+                            .toLowerCase();
+
+                        // Show or hide the search result item based on whether it matches the search query
+                        if (title.includes(searchText)) {
+                            $(this).show();
+                            resultsFound =
+                                true; // Set the flag to true if a result is found
+                        } else {
+                            $(this).hide();
+                        }
+                    });
+
+                    // Show or hide the "No results found" message based on the flag
+                    if (resultsFound) {
+                        $('.no-results-message').hide();
+                        $('.text-suggestion').show();
+                    } else {
+                        $('.no-results-message').show();
+                        $('.text-suggestion').hide();
+                    }
+                });
             // Lắng nghe sự kiện khi input mất focus
             $('#searchInput').blur(function() {
                 // Kiểm tra nếu không click vào danh sách kết quả, thì mới ẩn danh sách
