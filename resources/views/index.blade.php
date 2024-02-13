@@ -68,7 +68,7 @@
                 <div class="item-content">
                     <h3>Dịch vụ</h3>
                     <div class="content onPC">May đồng phục</div>
-                    <div class="content onMoblie">May mặc</div>
+                    <div class="content onMoblie">May <br> mặc</div>
                 </div>
             </li>
             <li class="rectangle-item">

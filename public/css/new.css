@@ -153,7 +153,6 @@ a.plain {
 .box-text {
     padding: 0.7em 1.4em;
     position: relative;
-    width: 100%;
     font-size: 0.9em;
     background-color: #fff;
 }
