@@ -66,13 +66,11 @@ footer {
   footer .content .content-footer ul li i {
     min-width: 20px;
     padding-right: 10px;
-    color: #ed2226;
   }
   
   footer .content .content-footer:nth-child(2) ul li::before {
     content: "›";
     font-weight: bold;
-    color: #ed2226;
     display: block;
     position: absolute;
     left: -20px;

@@ -1,6 +1,6 @@
 @extends('layout.main')
 @section('title')
-   TAT -  {{$news->title}}
+   TAT -  {{$news->post_title}}
 @endsection
 @push('css')
     <link rel="stylesheet" href="{{ asset('css/preview.css') }}">
@@ -23,55 +23,9 @@
     <div class="list-content">
         <div class="content" id="section2">
             <div class="main-content">
-                <h1 class="title" style="text-transform: capitalize">{{$news->title}}</h1>
-                <div class="introduce">
-                    <blockquote>
-                        <p>
-                            {{$news->content}}
-                        </p>
-                    </blockquote>
-                </div>
-                <div class="content-text">
-                    <ul>
-                        <li>
-                            Năm 2003: Được thành lập như một công ty khởi nghiệp chuyên
-                            sản xuất bảng viết chống chói, bàn và ghế cho học sinh ở mọi
-                            cấp độ.
-                        </li>
-                        <li>
-                            Năm 2006: Mở rộng kinh doanh để cung cấp đồng phục cho học
-                            sinh.
-                        </li>
-                        <li>
-                            Năm 2010: Bắt đầu tập trung vào sản xuất quần áo cho các công
-                            ty nước ngoài.
-                        </li>
-                        <li>
-                            Năm 2015: Mở rộng kinh doanh tiếp tục, sản xuất đồng phục thời
-                            trang và trang thiết bị bảo vệ cho nhân viên.
-                        </li>
-                        <li>
-                            Trở thành đối tác chiến lược của THACO TRƯỜNG HẢI trong gần 1
-                            thập kỷ.
-                        </li>
-                    </ul>
-                </div>
-                <div class="image-container">
-                    @foreach ($news->images as $item )
-                        
-                 
-                    <div class="image">
-                        <div class="image-item">
-                            <img src="{{$item->getImage()}}" alt="" />
-                        </div>
-                        <div class="detail">{{$item->description}}</div>
-                        <div class="content-text">
-                            {{$item->content}}
-                        </div>
-                    </div>
-                    @endforeach
-                </div>
+               {!!$news->post_content!!}
             </div>
+        
         </div>
     </div>
 </div>

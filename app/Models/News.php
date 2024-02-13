@@ -4,8 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-
-class News extends Model
+use Corcel\Model\Post as Corcel;
+class News extends Corcel
 {
     use HasFactory;
     protected $fillable = ['title', 'content','slug','description','isInBin'];
@@ -16,12 +16,7 @@ class News extends Model
     }
     public function getImage()
     {
-        $image= Image::where('news_id',$this->id)->first();
-        if($image)
-        {
-            return asset('storage/news/').'/'.$image->image_path;
-        }
-        return null;
-        
+        preg_match('/<img[^>]+src="([^"]+)"[^>]*>/', $this->post_content, $matches);
+        return isset($matches[1]) ? $matches[1] : null;
     }
 }

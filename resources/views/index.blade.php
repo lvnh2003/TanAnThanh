@@ -185,9 +185,7 @@
     <!-- introduce -->
     <div>
         <div class="about">
-            <div class="information">
-                <br />
-                <br />
+            <div class="information">\
                 <div class="name">
                     <br />
                     GIỚI THIỆU

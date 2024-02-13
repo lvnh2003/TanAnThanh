@@ -29,24 +29,3 @@ Route::get("lien-he",function(){
 Route::get('/tin-tuc',[MainController::class,'news'])->name('news');
 Route::get('/tin-tuc/{slug}',[MainController::class,'detail'])->name('detail');
 
-
-Route::get('/login',[MainController::class,'login'])->name('login');
-Route::post('/login',[MainController::class,'check'])->name('loginAction');
-Route::middleware('AdminLogin')->group(function(){
-    Route::get('/admin',function(){
-        return view('admin.index');
-    })->name('admin.index');
-    Route::get('/post',function(){
-        return view('admin.post');
-    })->name('post');
-    Route::post('/post',[MainController::class,'upload'])->name('store');
-    Route::get('list',[MainController::class,'list'])->name('list');
-    Route::delete('/new/{id}',[MainController::class,'destroy'])->name('destroy');
-    Route::get('/logout',[MainController::class,'logout'])->name('logout');
-    Route::get('/dustbin',[MainController::class,'bin'])->name('bin');
-    Route::get('listBin',[MainController::class,'listBin'])->name('listBin');
-    Route::post('moveBin/{id}',[MainController::class,'moveBin'])->name('moveBin');
-    Route::post('/change/{id}',[MainController::class,'change'])->name('change');
-    Route::delete('/deleteAll',[MainController::class,'removeAll'])->name('removeAll');
-});
-Route::get('/data',[MainController::class,'data'])->name('getAllNews');

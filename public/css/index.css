@@ -40,7 +40,7 @@ body {
 }
 
 .content-bottom-header .rectangle-item {
-    flex-basis: 22%;
+    flex-basis: 19%;
     margin: 10px;
     background-color: white;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
@@ -236,7 +236,7 @@ body {
     cursor: pointer;
 }
 .about .information .button-about .item {
-    border: 2px solid white;
+    border: 1px solid white;
     padding: 10px 20px;
     margin: 10px;
     border-radius: 10px;
@@ -353,6 +353,7 @@ body {
 .content-item div div {
     padding-top: 20px;
     color: grey;
+    font-size: 14px
 }
 /* contact */
 
@@ -401,7 +402,7 @@ body {
     display: block;
     text-align: center;
     position: relative !important;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .flickity-viewport {
     height: 60px !important;

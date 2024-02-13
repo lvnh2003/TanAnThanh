@@ -22,9 +22,9 @@
             top: 0;
         }
 
-        .list-content .content::before {
+        /* .list-content .content::before {
             content: none;
-        }
+        } */
     </style>
 @endpush
 @section('content')

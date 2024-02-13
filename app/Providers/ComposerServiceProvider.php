@@ -21,7 +21,7 @@ class ComposerServiceProvider extends ServiceProvider
     public function boot()
     {
         View::composer('*', function ($view) {
-            $data = News::all(); // Lấy dữ liệu từ model News (hoặc từ cache như đã thảo luận trong câu trước)
+            $data = News::published()->whereNotIn('post_name', ['wp-global-styles-twentytwentythree', 'navigation'])->get();
             $view->with('data', $data);
         });
     }

@@ -53,7 +53,7 @@
                                     <img class="search-result-image-inner" src="{{$new->getImage()}}" alt="" style="width: 80px;height: 40px;object-fit: cover;">
                                 </div>
                                 <div class="search-result-title" class="search-result-text" style="word-wrap: break-word;max-width: 50%;font-size: 13px;color:black ">
-                                        <p > {{strlen($new->title)<30? $new->description : substr($new->title,0,30).'...'}} </p>
+                                        <p > {{strlen($new->post_title)<30? $new->post_title : substr($new->post_title,0,30).'...'}} </p>
                                 </div>
                                 
                             </div>

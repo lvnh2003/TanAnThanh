@@ -35,7 +35,7 @@
                         <b>02353.820.341 - 02353.841.611</b>
                     </li>
                     <li>
-                        <i class="fa fa-envelope"></i>Email: tananthanh.tat@gmail.com
+                        <i class="fa fa-envelope"></i>Email: <b>tananthanh.tat@gmail.com</b> 
                     </li>
                 </ul>
             </div>
@@ -75,7 +75,7 @@
                             <div class="item-input">
                                 <div class="item">
                                     <button>
-                                        GỬI LIÊN HỆ
+                                        EM ĐIỂN
                                     </button>
                                 </div>
                             </div>

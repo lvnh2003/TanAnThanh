@@ -43,19 +43,15 @@
                                         <div class="">
 
 
-                                            <h5 class="">{{$new->title}}
+                                            <h5 class="">{{$new->post_title}}
                                             </h5>
                                             <div class="is-divider"></div>
-                                            <p class=""> {{strlen($new->description)<120? $new->description : substr($new->description,0,120).'...'}} </p>
-
-
-
                                         </div>
                                     </div>
                                     <div class="badge absolute top post-date badge-outline">
                                         <div class="badge-inner">
-                                            <span class="">{{$new->created_at->day}}</span><br>
-                                            <span class="post-date-month is-xsmall">Th{{$new->created_at->month}}</span>
+                                            <span class="">{{$new->post_date->day}}</span><br>
+                                            <span class="post-date-month is-xsmall">Th{{$new->post_date->month}}</span>
                                         </div>
                                     </div>
                                 </div>
